@@ -1,0 +1,11 @@
+Demo contains the following directories:
+  CleanedRawData
+  CleanedRawData-2lanes
+  align-bbmap
+  align-gsnap
+  align-tophat
+  ct-cufflinks
+  ct-htseq
+  rpt-fpkm
+  rpt-raw-ct
+  
