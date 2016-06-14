@@ -1,0 +1,51 @@
+Demo for TopHat Wrapper: align_tophat_.sh                                                                                                                    
+                                                                                                                                
+Cleaned Raw Reads                                                                                                                        
+   8 pair-end Illumina RNA-Seq data sets of Arabidopsis with 1000 reads                                                            
+will be aligned to the reference genome sequence of Ensembl TAIR10 
+using the tophat wrapper: align_tophat_.sh. The cleaned raw data is 
+in RNA-seq/Demo/CleanedRawData, and the alignment output will be 
+in the current demo directory.
+
+TopHat Wrapper: align_tophat_.sh
+   align_tophat_.sh is a wrapper for TopHat in order to process a batch
+of RNA-seq data using the cluster condo.its.iastate.edu. 
+  
+Usage:
+    ./align_tophat_.sh ./align_tophat.cfg sample_ID
+
+To run the demo for one sample L1_1000reads in a computational node:
+   qsub -I
+   cd /TopHat/Wrapper/Demo/
+   sh ./align_tophat_sample_L1.sh
+
+or :
+   qub -I
+   cd /TopHat/Wrapper/Demo/
+    sh ./align_tophat_.sh ./align_tophat_ath.cfg  L1_1000reads
+
+To run the demo for 8 samples:
+   qsub align_tophat.qsub.demo 
+
+Files:
+align_tophat_ath.cfg: contains the tophat input parameters for a specific
+                      project regarding the genome, the read library, 
+                      the thread number ...
+
+sample_id.list: lists the prefix (sample ID) of the RNA-Seq raw data files.
+                the sample ID is used to re-construct input/output file names.
+
+align_tophat.qsub.demo: reads sample_id.list and distributes the alignment jobs to 
+the computational node(s) using the command "parallel".
+
+The output from TopHat is listed as following, and is not deposited in GitHub.
+L1_1000reads.thout
+L2_1000reads.thout
+L3_1000reads.thout
+L4_1000reads.thout
+L5_1000reads.thout
+L6_1000reads.thout
+L7_1000reads.thout
+L8_1000reads.thout
+
+ 
