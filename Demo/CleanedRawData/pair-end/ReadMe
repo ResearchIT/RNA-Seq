@@ -1,0 +1,37 @@
+Paired-end RNA-Seq Cleaned Raw Reads of Arabidopsis                                                                            
+                                                                                                                               
+    ./CleanedRawData contains raw fastq files in zipped and unzipped form,                                                     
+sample_id.list and the directory "original".                                                                                   
+                                                                                                                               
+1. Raw fastq files                                                                                                             
+    For the demo purpose, first 1000 reads from 8 paired-end data files                                                        
+(Sample-ID: L1 to L8) are selected, zipped and unzipped files are listed                                                       
+as following:                                                                                                                  
+                                                                                                                               
+L1_1000reads_1(2).fq   L1_1000reads_1(2).fq.gz                                                                                 
+L2_1000reads_1(2).fq   L2_1000reads_1(2).fq.gz                                                                                 
+L3_1000reads_1(2).fq   L3_1000reads_1(2).fq.gz                                                                                 
+L4_1000reads_1(2).fq   L4_1000reads_1(2).fq.gz                                                                                 
+L5_1000reads_1(2).fq   L5_1000reads_1(2).fq.gz                                                                                 
+L6_1000reads_1(2).fq   L6_1000reads_1(2).fq.gz                                                                                 
+L7_1000reads_1(2).fq   L7_1000reads_1(2).fq.gz                                                                                 
+L8_1000reads_1(2).fq   L8_1000reads_1(2).fq.gz                                                                                 
+                                                                                                                               
+                                                                                                                               
+2. sample_id.list                                                                                                              
+    sample_id.list contains the prefixes of the fastq files, which represent                                                   
+the samples. the sample ID for L1_1000reads_1(2).fq is L1_1000reads. RNA-seq                                                   
+pipeline will reconstruct the data file name using the sample ID. The                                                          
+sample ID for the 8 demo data sets are:
+L1_1000reads
+L2_1000reads
+L3_1000reads
+L4_1000reads
+L5_1000reads
+L6_1000reads
+L7_1000reads
+L8_1000reads
+
+3. Original data sets 
+    The original data files of the 8 samples are in the directory "orignal",
+    and they are not deposited in GitHub due to their large size.
